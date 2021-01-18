@@ -1,18 +1,18 @@
-const express = require('express')
+const express = require('express') //Criando o servidor
 const nunjucks = require('nunjucks')
 const routes = require("./routes")
 
 const server = express()
 
-server.use(express.static('public'))
-server.use(routes)
+server.use(express.static('public')) //Arrumando a pasta public
+server.use(routes) //Criando as rotas
 
-server.set("view engine", "njk")
+server.set("view engine", "njk") // Configurando a view engine
 
 nunjucks.configure("views", {
     express:server
 })
 
-server.listen(5000, function(){
+server.listen(5000, function(){ //Colocando o servidor online
     console.log("Server is running")
 })

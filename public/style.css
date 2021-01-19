@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #7159c1;
+    --secondary-color: #f7df1d;
 }
 
 * {
@@ -61,10 +62,10 @@ header {
 
 /* === CARD === */
 
-div.card {
+.card {
     background-color: white;
     width: 800px;
-    height: 400px;
+    min-height: 400px;
 
     margin: 45px auto;
 
@@ -84,4 +85,80 @@ div.card {
     to {
         opacity: 1;
     }
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    border-bottom: 1px solid #0000001c;
+    padding: 16px 0;
+
+}
+
+.details .item:last-child {
+    border: none;
+}
+.details h3,
+.details .item div:nth-child(1) {
+    color: #777;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+
+.details .item div:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.details .item div:nth-child(2) span {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+
+}
+
+/* === FORM === */
+
+form input {
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+form input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+form input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+form button[type="submit"] {
+    color: white;
+    font-size: 16px;
+    padding: 8px 32px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
 }

@@ -2,31 +2,11 @@
   "instructors": [
     {
       "avatar_url": "htttps://google.com",
-      "name": "inrgidiii",
+      "name": "giovanna",
       "birth": "1996-07-24",
       "gender": "F",
-      "services": "musculação"
-    },
-    {
-      "avatar_url": "htttps://google.com",
-      "name": "joice",
-      "birth": "1996-07-24",
-      "gender": "F",
-      "services": "musculação"
-    },
-    {
-      "avatar_url": "htttps://google.com",
-      "name": "joice",
-      "birth": "1996-07-24",
-      "gender": "F",
-      "services": "musculação"
-    },
-    {
-      "avatar_url": "htttps://google.com",
-      "name": "aline",
-      "birth": "1996-07-24",
-      "gender": "F",
-      "services": "musculação"
+      "services": "musculação",
+      "created_at": 1611705293132
     }
   ]
 }
